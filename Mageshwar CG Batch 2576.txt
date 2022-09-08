@@ -1,0 +1,83 @@
+1 Scanner
+
+
+import java.util.Scanner;
+class Student
+{
+	public static void main (String[] args)
+	{
+		Scanner s=new Scanner(System.in);
+		
+		System.out.println("id num");
+		int a = s.nextInt();
+		System.out.println("name");
+		String b = s.next();
+		System.out.println("atedence");
+		String c = s.next();
+}}
+
+
+---------------------------------------------------------------------------------------
+
+
+2 Operator
+
+
+
+class Operator
+{
+	public static void main (String[] args)
+	{
+		int x,y,z,m,n;
+		boolean b1;
+		char wer;
+		x=4;
+		y=x;
+		z=x+y-1;//assign op
+		m=x*z;//arthmatic op
+		x+=4;//mult assign op
+		n=--z;//unary op
+		
+		System.out.println(z+" "+m+" "+x+" "+n);
+		wer=(x>5 && y>5 && z>5)?'p':'f';//ternary op
+		System.out.println(wer);
+		System.out.println(x&y);//bitwise op
+		System.out.println(x==y);//relation op
+		
+		b1=(x>5 || y>5);
+		System.out.println(b1);
+}}	
+		
+
+---------------------------------------------------------------------------------------
+
+
+3 Datatype
+
+
+class Datatype
+{
+public static void main (String [] args)
+{
+			byte age=20;
+		System.out.println(age);
+		short pinnum=345;
+		System.out.println(pinnum);
+		int regno=56789;
+		System.out.println(regno);
+		Long phno=657567567587l;
+		System.out.println(phno);
+		float average=5.09f;
+		System.out.println(average);
+		double bill=8.009;
+		System.out.println(bill);
+		char gender='M';
+		System.out.println(gender);
+		String email="mnbnv@132";
+		System.out.println(email);
+		boolean result=true;
+		System.out.println(result);
+}}
+
+----------------------------------------------------------------------------------------
+
