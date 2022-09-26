@@ -1,0 +1,50 @@
+1 final method
+
+package org.srr;
+class A
+{
+	final void work() {
+		System.out.println("123");		
+}}
+class B extends A
+{
+	void work() {
+		System.out.println("456");
+	}
+}
+
+public class finalkeyword {
+	public static void main(String[] args) {
+		B w=new B();
+		w.work2();
+		w.work();
+	}
+
+}
+
+-----------------------------------------------------------------------
+
+2 final class
+
+package org.srr;
+final class A
+{
+	void work() {
+		System.out.println("123");		
+}}
+class B extends A
+{
+	void work() {
+		System.out.println("456");
+	}
+}
+
+public class finalkeyword {
+	public static void main(String[] args) {
+		B w=new B();
+		w.work2();
+		w.work();
+	}
+
+}
+
