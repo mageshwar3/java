@@ -1,0 +1,93 @@
+1 nested try exception
+
+
+package anudip.org;
+
+public class execp {
+	public static void main(String[] args) {
+		try {
+			try {
+				String s=null;
+				System.out.println(s.length());
+			} catch (Exception e) {
+			System.out.println(e);
+			}
+			try {
+				int [] a= {1,2};
+				System.out.println(a[3]);
+			} catch (Exception e) {
+				System.out.println(e);
+			}
+			
+		} catch (Exception e) {
+			
+		}
+		
+	}
+
+}
+
+-------------------------------------------------------------------------------------------------------------------------
+
+2 & 3  user defind class throw and throws
+
+
+package anudip.org;
+ class invalidbalanceException extends Exception
+ {
+	 public invalidbalanceException () {
+		
+	}
+ }
+
+public class userdefined {
+	static void check(int balance) throws invalidbalanceException{
+		if (balance < 2000) {
+		    throw new invalidbalanceException();
+		} else {
+             System.out.println("valid balance");
+		}
+
+	}public static void main(String[] args) throws invalidbalanceException {
+		check(2001);
+	}
+
+}
+
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+
+4  &  5  string
+
+
+
+package anudip.org;
+
+public class stringdemo {
+	public static void main(String[] args) {
+		String s1="mageshwar";
+		String s2="srini";
+		System.out.println(s1.charAt(0));
+		System.out.println(s1.substring(1));
+		System.out.println(s1.equals(s2));
+		System.out.println(s1.compareTo(s2));
+		System.out.println(s1.substring(3));
+		System.out.println(s1.replace("r", "n"));
+		System.out.println(s1.split(s2));
+		System.out.println(s2.concat("warn"));
+		System.out.println(s1==s2);
+		
+		StringBuilder s3=new StringBuilder("suma");
+		StringBuffer s4=new StringBuffer("ajith");
+		System.out.println(s3.equals(s4));
+		System.out.println(s3.reverse());
+		System.out.println(s3.append(s2));
+		System.out.println(s3.insert(1, 'j'));
+		System.out.println(s4.delete(0, 4));
+	}
+
+}
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
