@@ -1,0 +1,168 @@
+1 
+
+
+package anudip.org;
+import java.util.*; 
+import java.io.*; 
+class Main 
+{ 
+public static void main(String args[]) 
+{ 
+Scanner in=new Scanner(System.in); 
+String userid,password; 
+System.out.println("Enter user id"); 
+userid=in.next(); 
+System.out.println("Enter password"); 
+password=in.next(); 
+try 
+{ 
+if(userid.equals("sonoo") && password.equals("jaiswal")) 
+{ 
+System.out.println("Welcome user"); 
+} 
+else 
+{ 
+throw new InvalidUser("Invalid user or password"); 
+} 
+} 
+catch(Exception e) 
+{ 
+System.out.println(e); 
+} 
+} 
+} 
+class InvalidUser extends Exception 
+{ 
+InvalidUser(String s) 
+{ 
+super(s);
+}}
+
+-----------------------------------------------------------------------------------
+
+2  
+
+package anudip.org;
+
+class sample{
+	
+		private long bookingId;
+		private long flightId;
+		private String classType;
+		private String dateOfJourney;
+		private String dateOfBooking;
+		private int noOfAdults;
+		private int noOfChilds;
+		private String gender;
+		private int ticketFare;
+		private long customerId;
+		public long getBookingId() {
+			return bookingId;
+		}
+		public void setBookingId(long bookingId) {
+			this.bookingId = bookingId;
+		}
+		public long getFlightId() {
+			return flightId;
+		}
+		public void setFlightId(long flightId) {
+			this.flightId = flightId;
+		}
+		public String getClassType() {
+			return classType;
+		}
+		public void setClassType(String classType) {
+			this.classType = classType;
+		}
+		public int getNoOfAdults() {
+			return noOfAdults;
+		}
+		public void setNoOfAdults(int noOfAdults) {
+			this.noOfAdults = noOfAdults;
+		}
+		public int getNoOfChilds() {
+			return noOfChilds;
+		}
+		public void setNoOfChilds(int noOfChilds) {
+			this.noOfChilds = noOfChilds;
+		}
+		public String getGender() {
+			return gender;
+		}
+		public void setGender(String gender) {
+			this.gender = gender;
+		}
+		public int getTicketFare() {
+			return ticketFare;
+		}
+		public void setTicketFare(int ticketFare) {
+			this.ticketFare = ticketFare;
+		}
+		public long getCustomerId() {
+			return customerId;
+		}
+		public void setCustomerId(long customerId) {
+			this.customerId = customerId;
+		}
+		
+}	
+		public class BookingingDetails{
+			
+			public static void main(String[] args) {
+				
+				 sample s=new sample();
+				 s.setBookingId(99999999);
+				 s.setClassType("first cls");
+				 s.setCustomerId(12345);
+				 s.setGender("male");
+				 s.setFlightId(33333333);
+				 s.setNoOfChilds(1);
+				 s.setTicketFare(3000000);
+				 System.out.println(s.getBookingId()+""+s.getClassType()+""+s.getFlightId()+""+s.getGender()+""+s.getNoOfAdults()+""+s.getTicketFare());
+			}
+		}
+
+
+
+---------------------------------------------------------------------------------------
+
+3  
+
+package anudip.org;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class import1 {
+	
+	
+		public static void main(String[] args) {
+			
+			
+		
+		String bokingid ;
+		
+		Scanner n = new Scanner(System.in);
+		 System.out.println("Enter boking id ");
+		 bokingid=n.next();
+		 
+		 try
+		 {
+		 if(bokingid.equals("55555mage") ) 
+			 {
+		 System.out.println(" Welcome user to jet booking ");
+			 }
+		 else 	 
+		 
+		 {
+		 throw  new InvalidUser ("wrong id");	 
+		 }
+		 }
+		 catch(Exception e)	 
+		 {
+		 System.out.println(e);
+		
+}}}
+
+
+-------------------------------------------------------------------------------------
