@@ -1,0 +1,71 @@
+1
+package junit.com;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+class befaftertest {
+
+	@BeforeAll
+	static void setUpBeforeClass() throws Exception {
+		System.out.println("1");
+	}
+
+	@AfterAll
+	static void tearDownAfterClass() throws Exception {
+		System.out.println("2");
+	}
+
+	@BeforeEach
+	void setUp() throws Exception {
+		System.out.println("3");
+	}
+
+	@AfterEach
+	void tearDown() throws Exception {
+		System.out.println("4");
+	}
+
+	@Test
+	void test() {
+	System.out.println("test1");
+	}@Test
+	void test2() {
+	System.out.println("test2");
+	}
+
+}
+
+
+-----------------------------------------------------------------------------
+
+2 
+package junit.com;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class demojunitTest {
+
+	@Test
+	public void test() {
+		demojunit d=new demojunit();
+		int exp=8;
+		int act=d.adtwo(5, 3);
+		
+		int act2=d.divide(8, 1);
+		int act3=d.multi(4, 2);
+		assertEquals(exp, act);
+		assertEquals(exp, act2);
+		assertEquals(exp, act3);
+	}
+
+}
+
+---------------------------------------------------------------------------
